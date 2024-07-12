@@ -1,11 +1,10 @@
- 
-1. backend setting : database setting, web-socket setting
-2. frontend setting: web-socket setting
-3. backend frontend connect test
-4. user login test
-5. message test
+1. backend setting : database setting, web-socket setting  
+2. frontend setting: web-socket setting   
+3.  backend frontend connect test  
+4.  user login test  
+5.  message test
 
- <hr/>
+   <hr/>
 
    # 백엔드 세팅
 
@@ -30,4 +29,4 @@
 
    ![image](https://github.com/user-attachments/assets/56b64b56-b77c-4fe1-9a63-9c91f096a30e)
 
- 
+
