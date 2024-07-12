@@ -29,20 +29,6 @@ module.exports = function (io) {
       }
     });
 
-    socket.on('sendMessage', async (message, cb) => {
-      try {
-        // 유저찾기(socket.id로)
-        const user = await userController.checkUser(socket.id);
-        //메시지 저장
-        const newMessage = await chatController.saveChat(message, user);
-        // 서버에 접속한 클라이언트들에게 전부 알려줌
-        io.emit('message', newMessage);
-        cb({ ok: true });
-      } catch (error) {
-        cb({ ok: false, error: error.message });
-      }
-    });
-
     socket.on('disconnect', () => {
       console.log('user is disconnected');
     });
